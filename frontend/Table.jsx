@@ -32,7 +32,7 @@ function CricketTable() {
   if (loading) {
     return (
       <div style={{ textAlign: "center", marginTop: "50px" }}>
-        <h2>Loading player data...</h2>
+        <h2>Loading rcb-2016 player's data...</h2>
       </div>
     );
   }
@@ -67,16 +67,10 @@ function CricketTable() {
                 Player Name
               </th>
               <th style={{ padding: "12px", textAlign: "center", borderBottom: "2px solid #ddd" }}>
-                Matches
+                Jersey No
               </th>
               <th style={{ padding: "12px", textAlign: "center", borderBottom: "2px solid #ddd" }}>
                 Runs
-              </th>
-              <th style={{ padding: "12px", textAlign: "center", borderBottom: "2px solid #ddd" }}>
-                Wickets
-              </th>
-              <th style={{ padding: "12px", textAlign: "center", borderBottom: "2px solid #ddd" }}>
-                Average
               </th>
             </tr>
           </thead>
@@ -99,16 +93,10 @@ function CricketTable() {
                   {player.name}
                 </td>
                 <td style={{ padding: "12px", borderBottom: "1px solid #ddd", textAlign: "center" }}>
-                  {player.matches}
+                  {player.jersey_no}
                 </td>
                 <td style={{ padding: "12px", borderBottom: "1px solid #ddd", textAlign: "center", color: "#2d3748" }}>
                   {player.runs}
-                </td>
-                <td style={{ padding: "12px", borderBottom: "1px solid #ddd", textAlign: "center", color: "#e53e3e" }}>
-                  {player.wickets}
-                </td>
-                <td style={{ padding: "12px", borderBottom: "1px solid #ddd", textAlign: "center", color: "#38a169" }}>
-                  {player.matches > 0 ? (player.runs / player.matches).toFixed(1) : 0}
                 </td>
               </tr>
             ))}

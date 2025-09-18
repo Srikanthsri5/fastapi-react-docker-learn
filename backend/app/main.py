@@ -25,8 +25,7 @@ def cricket_table():
     table to display cricket player's stats
     """
     tab_data = [
-        {"name": "Player 1", "matches": 10, "runs": 500, "wickets": 5},
-        {"name": "Player 2", "matches": 12, "runs": 600, "wickets": 8},
-        {"name": "Player 3", "matches": 8, "runs": 300, "wickets": 2},
+        {"name": "Virat Kohli", "jersey_no": 18, "runs": 973, "wickets": 0},
+        {"name": "AB de Villiers", "jersey_no": 17, "runs": 600, "wickets": 0}
     ]
     return {"data": tab_data}
